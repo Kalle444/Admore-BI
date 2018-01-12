@@ -23,3 +23,12 @@ $border-radius-large: 2px;
 $border-radius-small: 2px;
 
 // Override other variables below!
+$text-color: $gray!default;
+
+
+//** Global textual link color.
+$link-color: $gray !default;
+//** Link hover color set via `darken()` function.
+$link-hover-color: $orange !default;
+//** Link hover decoration.
+$link-hover-decoration: none !default;
