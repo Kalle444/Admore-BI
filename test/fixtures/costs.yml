@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  amount: 1
+  company_cost: false
+  start_date: 2018-01-13
+  end_date: 2018-01-13
+
+two:
+  name: MyString
+  amount: 1
+  company_cost: false
+  start_date: 2018-01-13
+  end_date: 2018-01-13
