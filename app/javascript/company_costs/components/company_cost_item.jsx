@@ -3,12 +3,11 @@ import React, { Component } from 'react';
 export default class CompanyCostItem extends Component {
   render() {
     return (
-      <div className="company-cost-item">
-        <h3> {this.props.cost.name}</h3>
-        <h3> {this.props.cost.amount}</h3>
-        <h3> {this.props.cost.start_date} - </h3>
-        <h3> {this.props.cost.end_date}</h3>
-        <h3> Admore AB </h3>
+      <div className="company-costs">
+        <div className="company-cost">{this.props.cost.name}</div>
+        <div className="company-cost">{this.props.cost.amount}</div>
+        <div className="company-cost">{this.props.cost.time_period}</div>
+        <div className="company-cost">Admore AB</div>
       </div>
     );
   }

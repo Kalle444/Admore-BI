@@ -1,6 +1,12 @@
 
-.company-cost-item {
+.company-costs {
   display: flex;
-  background-color: red;
+  justify-content: Flex-start;
+}
+
+.company-cost {
+ font-size: 20px;
+ flex-basis: 25%;
 
 }
+
