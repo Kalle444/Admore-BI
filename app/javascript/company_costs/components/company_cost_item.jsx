@@ -5,7 +5,7 @@ export default class CompanyCostItem extends Component {
     return (
       <div className="company-costs">
         <div className="company-cost">{this.props.cost.name}</div>
-        <div className="company-cost">{this.props.cost.amount}</div>
+        <div className="company-cost">{this.props.cost.amount}kr</div>
         <div className="company-cost">{this.props.cost.time_period}</div>
         <div className="company-cost">Admore AB</div>
       </div>
