@@ -17,5 +17,3 @@ Set up environment
   brew install postgresql
 
   brew services start postgresql
-
-  
