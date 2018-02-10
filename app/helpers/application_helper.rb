@@ -6,4 +6,5 @@ $admin_administrate_tabs = [
   ["Medarbetar", "information"],
   ["Project", ""],
   ["Normaltid", ""]]
+
 end
