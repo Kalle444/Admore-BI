@@ -1,7 +1,8 @@
-class CompanyCostsController < ApplicationController
+# frozen_string_literal: true
 
+class CompanyCostsController < ApplicationController
   def index
-    @company_costs  = Cost.all
+    @company_costs = Cost.all
   end
 
   def new

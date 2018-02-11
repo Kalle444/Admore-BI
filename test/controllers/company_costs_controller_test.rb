@@ -1,4 +1,6 @@
-require 'test_helper'
+# frozen_string_literal: true
+
+require "test_helper"
 
 class CompanyCostsControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
@@ -25,5 +27,4 @@ class CompanyCostsControllerTest < ActionDispatch::IntegrationTest
     get company_costs_update_url
     assert_response :success
   end
-
 end
