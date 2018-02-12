@@ -9,5 +9,5 @@ before_script:
 script:
   - bundle exec rake db:schema:load
   - bundle exec rake db:test:prepare
-  - bundle exec rubocop
+  - rubocop
   - bundle exec rails test
