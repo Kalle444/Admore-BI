@@ -1,4 +1,5 @@
 AllCops:
+
   TargetRubyVersion: 2.2
   # RuboCop has a bunch of cops enabled by default. This setting tells RuboCop
   # to ignore them, so only the ones explicitly set in this file are enabled.
@@ -6,6 +7,7 @@ AllCops:
   Exclude:
     - '**/templates/**/*'
     - '**/vendor/**/*'
+    - 'node_modules/**/*'
     - 'actionpack/lib/action_dispatch/journey/parser.rb'
     - 'node_modules/**/*'
 
