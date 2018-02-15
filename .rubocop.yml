@@ -32,6 +32,10 @@ Layout/ElseAlignment:
 Layout/EmptyLineAfterMagicComment:
   Enabled: true
 
+# Restrict the lenght of a line
+Metrics/LineLength:
+  Max: 100
+
 # In a regular class definition, no empty lines around the body.
 Layout/EmptyLinesAroundClassBody:
   Enabled: true
