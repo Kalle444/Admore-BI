@@ -14,7 +14,6 @@ gem "redis"
 gem "autoprefixer-rails"
 gem "jquery-rails"
 gem "bootstrap",     "~> 4.0.0.beta2.1"
-gem "bootstrap-sass"
 gem "material-sass", "~> 4.0.0.beta2"
 gem "material_icons"
 gem "font-awesome-sass"
@@ -36,4 +35,5 @@ group :development, :test do
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"
   gem "rubocop", require: false
+  gem "minitest-reporters"
 end
