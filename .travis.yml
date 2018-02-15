@@ -9,8 +9,8 @@ addons:
 before_script:
   - psql -c 'create database "Admore-BI_test";' -U postgres
   - gem install rubocop
+  - rubocop
 script:
   - bundle exec rake db:schema:load
   - bundle exec rake db:test:prepare
-  - rubocop
-  - rails test
+  - bundle exec rails test
