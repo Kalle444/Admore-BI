@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Cost table schema
 # create_table "costs", force: :cascade do |t|
 #   t.string "name"
@@ -11,15 +13,14 @@
 # end
 
 class Cost < ApplicationRecord
-#Associations
+  # Associations
 
 
 
-#Validations
-validates :name, presence: true
-validates :amount, presence: true
-validates :company_cost, inclusion: { in: [true, false], allow_nil: false }
-validates :start_date, presence: true
-validates :end_date, presence: true
-
+  # Validations
+  validates :name, presence: true
+  validates :amount, presence: true
+  validates :company_cost, inclusion: { in: [true, false], allow_nil: false }
+  validates :start_date, presence: true
+  validates :end_date, presence: true
 end

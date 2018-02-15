@@ -1,5 +1,6 @@
-require 'test_helper'
-require 'pry'
+# frozen_string_literal: true
+
+require "test_helper"
 
 class CompanyCostsControllerTest < ActionDispatch::IntegrationTest
   include Devise::Test::IntegrationHelpers
