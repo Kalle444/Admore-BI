@@ -27,6 +27,12 @@ group :development do
 end
 
 group :development, :test do
+  gem "shoulda-matchers", "~> 3.1", require: false
+  gem "database_cleaner"
+  gem "capybara"
+  gem "factory_bot_rails"
+  gem "faker", "~> 1.6", ">= 1.6.6"
+  gem "rspec-rails", "~> 3.7"
   gem "better_errors"
   gem "binding_of_caller"
   gem "pry-byebug"
