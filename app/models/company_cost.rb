@@ -8,7 +8,22 @@
 #   t.datetime "updated_at", null: false
 # end
 
-
-
 class CompanyCost < ApplicationRecord
+  # Validations
+  validates :name, presence: true
+  validates :amount, presence: true
+  validates :admore_cost, inclusion: { in: [true, false], allow_nil: false }
+  validates :start_date, presence: true
+  validates :end_date, presence: true
+
+  # Associations
+
+
+
+
+
+  # Validations
+
+
+  # Associations
 end
