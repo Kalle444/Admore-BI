@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 FactoryBot.define do
   factory :company_cost, class: CompanyCost do
     name "MyString"
