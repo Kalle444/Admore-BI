@@ -20,7 +20,7 @@
 
 class User < ApplicationRecord
   # Associations
-  has_many :user_company_costs
+  has_many :user_company_costs, dependent: :destroy
 
   # Validations
   validates :first_name, presence: true
