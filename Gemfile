@@ -30,7 +30,7 @@ group :development, :test do
   gem "shoulda-matchers", "~> 3.1", require: false
   gem "database_cleaner"
   gem "capybara"
-  gem "factory_bot_rails"
+  gem "factory_bot_rails", "~> 4.0"
   gem "faker", "~> 1.6", ">= 1.6.6"
   gem "rspec-rails", "~> 3.7"
   gem "better_errors"
