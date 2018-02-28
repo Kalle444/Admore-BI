@@ -30,4 +30,10 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+
+  def abbreviated_name
+    "#{self.first_name.first.capitalize} #{self.last_name.capitalize}"
+  end
+
+
 end
