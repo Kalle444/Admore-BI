@@ -12,20 +12,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180113104719) do
+ActiveRecord::Schema.define(version: 20180228190656) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "costs", force: :cascade do |t|
+  create_table "company_costs", force: :cascade do |t|
     t.string "name"
     t.integer "amount"
-    t.boolean "company_cost"
-    t.date "start_date"
-    t.date "end_date"
+    t.datetime "start_date"
+    t.datetime "end_date"
+    t.boolean "admore_cost", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "number_of_assignees"
+  end
+
+  create_table "user_company_costs", force: :cascade do |t|
+    t.integer "amount"
+    t.bigint "user_id"
+    t.bigint "company_cost_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["company_cost_id"], name: "index_user_company_costs_on_company_cost_id"
+    t.index ["user_id"], name: "index_user_company_costs_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -41,8 +50,12 @@ ActiveRecord::Schema.define(version: 20180113104719) do
     t.inet "last_sign_in_ip"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "first_name"
+    t.string "last_name"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "user_company_costs", "company_costs"
+  add_foreign_key "user_company_costs", "users"
 end

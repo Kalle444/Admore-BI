@@ -1,2 +1,2 @@
-import '../company_costs/index';
+// import '../company_costs/index';
 import '../tabs/index';

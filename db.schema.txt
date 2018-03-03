@@ -1,6 +1,5 @@
 This XLM displays the planned DB schema on the site: http://db.lewagon.com/
-the code was updated on 12/1 2018
-
+the code was updated on 28/2 2018 by Kalle
 
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- SQL XML created by WWW SQL Designer, https://github.com/ondras/wwwsqldesigner/ -->
@@ -82,7 +81,7 @@ the code was updated on 12/1 2018
 <part>id</part>
 </key>
 </table>
-<table x="429" y="310" name="User__fixed_costs">
+<table x="386" y="309" name="User__fixed_costs">
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -181,7 +180,7 @@ the code was updated on 12/1 2018
 <part>id</part>
 </key>
 </table>
-<table x="1276" y="94" name="registered_times">
+<table x="1276" y="150" name="registered_times">
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -209,7 +208,7 @@ the code was updated on 12/1 2018
 <part>id</part>
 </key>
 </table>
-<table x="1278" y="292" name="planned_times">
+<table x="1481" y="410" name="planned_times">
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -237,7 +236,7 @@ the code was updated on 12/1 2018
 <part>id</part>
 </key>
 </table>
-<table x="831" y="603" name="costs">
+<table x="386" y="628" name="Employee_costs">
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -253,17 +252,15 @@ the code was updated on 12/1 2018
 <row name="end_date" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
-<row name="company_cost" null="1" autoincrement="0">
+<row name="user_id" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
-<default>NULL</default></row>
-<row name="number_assignees" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
-<default>NULL</default></row>
+<default>NULL</default><relation table="users" row="id" />
+</row>
 <key type="PRIMARY" name="">
 <part>id</part>
 </key>
 </table>
-<table x="448" y="661" name="User_variable_costs">
+<table x="1037" y="667" name="User_company_costs">
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -271,9 +268,9 @@ the code was updated on 12/1 2018
 <datatype>INTEGER</datatype>
 <default>NULL</default><relation table="users" row="id" />
 </row>
-<row name="cost_id" null="1" autoincrement="0">
+<row name="company_cost_id" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
-<default>NULL</default><relation table="costs" row="id" />
+<default>NULL</default><relation table="Company_costs" row="id" />
 </row>
 <row name="amount" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
@@ -282,7 +279,7 @@ the code was updated on 12/1 2018
 <part>id</part>
 </key>
 </table>
-<table x="1503" y="436" name="expenses">
+<table x="1743" y="517" name="expenses">
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -293,7 +290,7 @@ the code was updated on 12/1 2018
 <part>id</part>
 </key>
 </table>
-<table x="1295" y="505" name="users_expenses">
+<table x="1537" y="686" name="users_expenses">
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -398,7 +395,27 @@ the code was updated on 12/1 2018
 <part>id</part>
 </key>
 </table>
+<table x="717" y="835" name="Company_costs">
+<row name="id" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="name" null="1" autoincrement="0">
+<datatype>CHAR</datatype>
+<default>NULL</default></row>
+<row name="amount" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="start_date" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="end_date" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="Admore_cost" null="1" autoincrement="0">
+<datatype>BLOB</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+</table>
 </sql>
-
-
-
