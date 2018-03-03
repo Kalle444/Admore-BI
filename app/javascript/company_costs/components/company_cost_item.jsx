@@ -1,21 +1,21 @@
-import React, { Component } from 'react';
-
-export default class CompanyCostItem extends Component {
-  render() {
-    return (
-      <div className="company-costs">
-        <div className="company-cost">{this.props.cost.name}</div>
-        <div className="company-cost">{this.props.cost.amount}kr</div>
-        <div className="company-cost">{this.props.cost.time_period}</div>
-        <div className="company-cost-assignees">
-          <div className="company-cost-assignee">Admore AB</div>
-          <div className="company-cost-icon icon-orange"><i className="fa fa-pencil-square-o" aria-hidden="true"></i>
-        </div>
-        </div>
-      </div>
-    );
-  }
-}
+// import React, { Component } from 'react';
+//
+// export default class CompanyCostItem extends Component {
+//   render() {
+//     return (
+//       <div className="company-costs">
+//         <div className="company-cost">{this.props.cost.name}</div>
+//         <div className="company-cost">{this.props.cost.amount}kr</div>
+//         <div className="company-cost">{this.props.cost.time_period}</div>
+//         <div className="company-cost-assignees">
+//           <div className="company-cost-assignee">Admore AB</div>
+//           <div className="company-cost-icon icon-orange"><i className="fa fa-pencil-square-o" aria-hidden="true"></i>
+//         </div>
+//         </div>
+//       </div>
+//     );
+//   }
+// }
 
 
 // export default class ProductListItem extends Component {
