@@ -29,6 +29,7 @@ end
 group :development, :test do
   gem "shoulda-matchers", "~> 3.1", require: false
   gem "database_cleaner"
+  gem "rails-controller-testing"
   gem "capybara"
   gem "factory_bot_rails", "~> 4.0"
   gem "faker", "~> 1.6", ">= 1.6.6"

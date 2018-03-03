@@ -12,6 +12,7 @@
 class CompanyCost < ApplicationRecord
   # Associations
   has_many :user_company_costs, dependent: :destroy
+  has_many :users, through: :user_company_costs
 
   # Validations
   validates :name, presence: true

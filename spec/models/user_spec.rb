@@ -8,7 +8,8 @@ RSpec.describe User, type: :model do
   end
 
   context "#abbreviated_name method" do
-      let(:user) {create(:user)}
+      let(:user) {create(:user, first_name: "Lena", last_name: "Lovgren")}
+
       it "should return First letter in first name & whole last name" do
         expect(user.abbreviated_name).to eq("L Lovgren")
       end

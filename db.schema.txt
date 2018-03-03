@@ -1,5 +1,5 @@
 This XLM displays the planned DB schema on the site: http://db.lewagon.com/
-the code was updated on 21/2 2018 by Kalle
+the code was updated on 28/2 2018 by Kalle
 
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- SQL XML created by WWW SQL Designer, https://github.com/ondras/wwwsqldesigner/ -->
@@ -395,7 +395,7 @@ the code was updated on 21/2 2018 by Kalle
 <part>id</part>
 </key>
 </table>
-<table x="717.6666641235352" y="835" name="Company_costs">
+<table x="717" y="835" name="Company_costs">
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -410,6 +410,9 @@ the code was updated on 21/2 2018 by Kalle
 <default>NULL</default></row>
 <row name="end_date" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="Admore_cost" null="1" autoincrement="0">
+<datatype>BLOB</datatype>
 <default>NULL</default></row>
 <key type="PRIMARY" name="">
 <part>id</part>
