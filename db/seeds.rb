@@ -28,7 +28,7 @@ puts "Adding User company costs"
 # Resa
 usercompanycost_resa = UserCompanyCost.create(amount: 5000, user: user_lena, company_cost: companycost_resa)
 usercompanycost_resa = UserCompanyCost.create(amount: 5000, user: user_bosse, company_cost: companycost_resa)
-usercompanycost_resa= UserCompanyCost.create(amount: 5000, user: user_uffe, company_cost: companycost_resa)
+usercompanycost_resa = UserCompanyCost.create(amount: 5000, user: user_uffe, company_cost: companycost_resa)
 
 # Parkering
 usercompanycost_parkering = UserCompanyCost.create(amount: 1000, user: user_lena, company_cost: companycost_parkering)

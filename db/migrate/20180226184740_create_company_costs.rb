@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateCompanyCosts < ActiveRecord::Migration[5.1]
   def change
     create_table :company_costs do |t|

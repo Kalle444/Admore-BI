@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 # create_table "user_company_costs", force: :cascade do |t|
 #   t.integer "amount"
 #   t.bigint "user_id"

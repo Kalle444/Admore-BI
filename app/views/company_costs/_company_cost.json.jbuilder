@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 json.extract! company_cost, :name, :id, :amount
 
 json.start_date = "#{company_cost[:start_date].strftime("%b %Y")}"

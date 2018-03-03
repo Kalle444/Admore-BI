@@ -1,11 +1,13 @@
-require 'rails_helper'
+# frozen_string_literal: true
+
+require "rails_helper"
 
 RSpec.describe CompanyCostsController, type: :controller do
 
   describe "GET #index" do
-    let(:user) {create(:user)}
-    let(:company_cost) {create(:company_cost)}
-    let(:user_company_cost) {create(:user_company_cost, user: user, company_cost: company_cost)}
+    let(:user) { create(:user) }
+    let(:company_cost) { create(:company_cost) }
+    let(:user_company_cost) { create(:user_company_cost, user: user, company_cost: company_cost) }
 
     it "returns http success" do
       sign_in user

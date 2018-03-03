@@ -1,5 +1,6 @@
 # frozen_string_literal: true
-require 'rails_helper'
+
+require "rails_helper"
 
 RSpec.describe User, type: :model do
   context "test the model validations" do
@@ -8,11 +9,11 @@ RSpec.describe User, type: :model do
   end
 
   context "#abbreviated_name method" do
-      let(:user) {create(:user, first_name: "Lena", last_name: "Lovgren")}
+    let(:user) { create(:user, first_name: "Lena", last_name: "Lovgren") }
 
-      it "should return First letter in first name & whole last name" do
-        expect(user.abbreviated_name).to eq("L Lovgren")
-      end
+    it "should return First letter in first name & whole last name" do
+      expect(user.abbreviated_name).to eq("L Lovgren")
+    end
   end
 
 end

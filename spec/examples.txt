@@ -1,13 +1,13 @@
 example_id                                                 | status  | run_time        |
 ---------------------------------------------------------- | ------- | --------------- |
-./spec/controllers/company_costs_controller_spec.rb[1:1:1] | passed  | 0.0324 seconds  |
-./spec/controllers/company_costs_controller_spec.rb[1:1:2] | passed  | 0.05894 seconds |
-./spec/models/company_cost_spec.rb[1:1]                    | passed  | 0.00717 seconds |
-./spec/models/company_cost_spec.rb[1:2]                    | passed  | 0.00327 seconds |
-./spec/models/company_cost_spec.rb[1:3]                    | passed  | 0.00354 seconds |
-./spec/models/company_cost_spec.rb[1:4]                    | passed  | 0.00368 seconds |
-./spec/models/user_company_cost_spec.rb[1:1]               | passed  | 0.54685 seconds |
-./spec/models/user_spec.rb[1:1:1]                          | passed  | 0.00398 seconds |
-./spec/models/user_spec.rb[1:1:2]                          | passed  | 0.03165 seconds |
-./spec/models/user_spec.rb[1:2:1]                          | passed  | 0.02886 seconds |
+./spec/controllers/company_costs_controller_spec.rb[1:1:1] | passed  | 0.07156 seconds |
+./spec/controllers/company_costs_controller_spec.rb[1:1:2] | passed  | 0.09868 seconds |
+./spec/models/company_cost_spec.rb[1:1]                    | passed  | 0.00327 seconds |
+./spec/models/company_cost_spec.rb[1:2]                    | passed  | 0.01618 seconds |
+./spec/models/company_cost_spec.rb[1:3]                    | passed  | 0.00353 seconds |
+./spec/models/company_cost_spec.rb[1:4]                    | passed  | 0.00378 seconds |
+./spec/models/user_company_cost_spec.rb[1:1]               | passed  | 1.15 seconds    |
+./spec/models/user_spec.rb[1:1:1]                          | passed  | 0.00481 seconds |
+./spec/models/user_spec.rb[1:1:2]                          | passed  | 0.02867 seconds |
+./spec/models/user_spec.rb[1:2:1]                          | passed  | 0.06168 seconds |
 ./spec/views/company_costs/index.html.erb_spec.rb[1:1]     | pending | 0.00001 seconds |

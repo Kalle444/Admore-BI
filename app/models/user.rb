@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 # create_table "users", force: :cascade do |t|
 #   t.string "email", default: "", null: false
 #   t.string "encrypted_password", default: "", null: false
@@ -34,6 +35,4 @@ class User < ApplicationRecord
   def abbreviated_name
     "#{self.first_name.first.capitalize} #{self.last_name.capitalize}"
   end
-
-
 end
